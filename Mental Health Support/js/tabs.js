@@ -1,0 +1,10 @@
+function openTab(evt, tabName) {
+  const contents = document.querySelectorAll(".tab-content");
+  const tabs = document.querySelectorAll(".tab");
+
+  contents.forEach(c => c.classList.remove("active"));
+  tabs.forEach(t => t.classList.remove("active"));
+
+  document.getElementById(tabName).classList.add("active");
+  evt.currentTarget.classList.add("active");
+}
